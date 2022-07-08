@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-language" content="ja">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1">
+  <script src="./js/mamhandwritten.js"></script>
+  <script>
+    //コンストラクタ(手書きキャンバスのId名, 手書きキャンバスのクリアボタンのId名)
+    var mamHandwritten1 = new TMamHandwritten("drawCanvasId", "clearButtonId");
+    
+	//登録するボタン押下時の設定
+	/*
+    window.addEventListener("DOMContentLoaded",function(){
+      document.getElementById("submitButtonId").addEventListener("click",function(){
+        mamHandwritten1.savePicture("draw.php");
+      });
+    });
+	*/
+  </script>
+</head>
+<body>
+  <h3>HTML5 の Canvas に手書きやマウスのドラッグで絵を書くサンプル</h3>
+  <div>
+    <canvas id="drawCanvasId" width="800px" height="600px" style="border:1px solid #000;width:800px;height:600px;"></canvas>
+  </div>
+  <input type="button" id="clearButtonId" value="クリア" style="width:160px;height:60px;" /><br>
+  <!--
+  <input type="button" id="submitButtonId" value="送信する" style="width:160px;height:60px;" />
+  -->
+</body>
+</html>
